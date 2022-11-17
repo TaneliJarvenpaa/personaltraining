@@ -1,25 +1,28 @@
-import logo from './logo.svg';
+import Treenit from './components/treenit';
+import Asiakassivu from './components/asiakassivu';
+import Koti from './components/kotisivu';
+import React, { useState } from 'react';
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
 import './App.css';
 
 function App() {
-  return (
+      const [value, setValue] = useState('Koti');
+    const handleTabChange = (event, value) => {
+        setValue(value);
+    };
+
+    return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+        <Tabs value={value} onChange={handleTabChange}>
+            <Tab value="Koti" label="Koti" />
+            <Tab value="Asiakassivu" label="Asiakassivu" />
+            <Tab value="Treenit" label="Treenit" />
+        </Tabs>
+        {value === 'Koti' && <Koti />}
+        {value === 'Asiakassivu' && <Asiakassivu />}
+        {value === 'Treenit' && <Treenit />}
+    </div>);
 }
 
 export default App;
