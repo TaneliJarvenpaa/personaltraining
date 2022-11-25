@@ -18,10 +18,12 @@ function App() {
             <Tab value="Koti" label="Koti" />
             <Tab value="Asiakassivu" label="Asiakassivu" />
             <Tab value="Treenit" label="Treenit" />
+            
         </Tabs>
         {value === 'Koti' && <Koti />}
         {value === 'Asiakassivu' && <Asiakassivu />}
         {value === 'Treenit' && <Treenit />}
+        
     </div>);
 }
 
