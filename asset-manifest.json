@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/TaneliJarvenpaa/ptApp.git/static/css/main.d32644d1.css",
+    "main.js": "/TaneliJarvenpaa/ptApp.git/static/js/main.2b89756d.js",
+    "static/js/787.07201041.chunk.js": "/TaneliJarvenpaa/ptApp.git/static/js/787.07201041.chunk.js",
+    "index.html": "/TaneliJarvenpaa/ptApp.git/index.html",
+    "main.d32644d1.css.map": "/TaneliJarvenpaa/ptApp.git/static/css/main.d32644d1.css.map",
+    "main.2b89756d.js.map": "/TaneliJarvenpaa/ptApp.git/static/js/main.2b89756d.js.map",
+    "787.07201041.chunk.js.map": "/TaneliJarvenpaa/ptApp.git/static/js/787.07201041.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d32644d1.css",
+    "static/js/main.2b89756d.js"
+  ]
+}
